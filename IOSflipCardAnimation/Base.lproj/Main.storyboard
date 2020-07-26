@@ -87,9 +87,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nUL-je-x0r" firstAttribute="top" secondItem="PZX-ux-j7w" secondAttribute="top" constant="36" id="Dn7-S8-YH2"/>
-                            <constraint firstItem="nUL-je-x0r" firstAttribute="leading" secondItem="blg-3V-Nh3" secondAttribute="leadingMargin" id="tkH-si-UGZ"/>
-                            <constraint firstItem="PZX-ux-j7w" firstAttribute="bottom" secondItem="nUL-je-x0r" secondAttribute="bottom" constant="438" id="zOo-44-oXk"/>
+                            <constraint firstItem="PZX-ux-j7w" firstAttribute="bottom" secondItem="nUL-je-x0r" secondAttribute="bottom" constant="438" id="3nA-7A-DGG"/>
+                            <constraint firstItem="PZX-ux-j7w" firstAttribute="trailing" secondItem="nUL-je-x0r" secondAttribute="trailing" constant="16" id="AfG-1W-BIe"/>
+                            <constraint firstItem="nUL-je-x0r" firstAttribute="leading" secondItem="PZX-ux-j7w" secondAttribute="leading" constant="16" id="Ksu-Mw-5Vi"/>
+                            <constraint firstItem="nUL-je-x0r" firstAttribute="leading" secondItem="blg-3V-Nh3" secondAttribute="leadingMargin" id="aHC-wK-D66"/>
+                            <constraint firstItem="nUL-je-x0r" firstAttribute="top" secondItem="PZX-ux-j7w" secondAttribute="top" constant="36" id="yVV-qi-XeD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PZX-ux-j7w"/>
                     </view>
