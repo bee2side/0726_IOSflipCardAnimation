@@ -13,6 +13,7 @@
 		A3F4BDB724CD3FC30094415F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F4BDB524CD3FC30094415F /* Main.storyboard */; };
 		A3F4BDB924CD3FC40094415F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F4BDB824CD3FC40094415F /* Assets.xcassets */; };
 		A3F4BDBC24CD3FC40094415F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F4BDBA24CD3FC40094415F /* LaunchScreen.storyboard */; };
+		A3F4BDE424CD7AEF0094415F /* CardviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BDE324CD7AEF0094415F /* CardviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A3F4BDB824CD3FC40094415F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3F4BDBB24CD3FC40094415F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3F4BDBD24CD3FC40094415F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F4BDE324CD7AEF0094415F /* CardviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A3F4BDAE24CD3FC30094415F /* IOSflipCardAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A3F4BDE324CD7AEF0094415F /* CardviewViewController.swift */,
 				A3F4BDAF24CD3FC30094415F /* AppDelegate.swift */,
 				A3F4BDB124CD3FC30094415F /* SceneDelegate.swift */,
 				A3F4BDB324CD3FC30094415F /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				A3F4BDB424CD3FC30094415F /* ViewController.swift in Sources */,
 				A3F4BDB024CD3FC30094415F /* AppDelegate.swift in Sources */,
 				A3F4BDB224CD3FC30094415F /* SceneDelegate.swift in Sources */,
+				A3F4BDE424CD7AEF0094415F /* CardviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
