@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         certificationBar.setImage(iconCerification, for: .normal)
         certificationBar.setTitle("Kakao Unit Card", for: .normal)
-        certificationBar.backgroundColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
+        certificationBar.backgroundColor = UIColor(red: 77/255, green: 77/255, blue: 77/255, alpha: 1)
         certificationBar.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
         certificationBar.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         
