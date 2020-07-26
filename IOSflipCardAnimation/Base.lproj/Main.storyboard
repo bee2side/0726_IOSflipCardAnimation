@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idCard_front" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-je-x0r">
-                                <rect key="frame" x="16" y="104" width="343" height="210"/>
+                                <rect key="frame" x="16" y="96" width="343" height="210"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +90,7 @@
                             <constraint firstItem="PZX-ux-j7w" firstAttribute="trailing" secondItem="nUL-je-x0r" secondAttribute="trailing" constant="16" id="AfG-1W-BIe"/>
                             <constraint firstItem="nUL-je-x0r" firstAttribute="leading" secondItem="PZX-ux-j7w" secondAttribute="leading" constant="16" id="Ksu-Mw-5Vi"/>
                             <constraint firstItem="nUL-je-x0r" firstAttribute="leading" secondItem="blg-3V-Nh3" secondAttribute="leadingMargin" id="aHC-wK-D66"/>
-                            <constraint firstItem="nUL-je-x0r" firstAttribute="top" secondItem="PZX-ux-j7w" secondAttribute="top" constant="16" id="yVV-qi-XeD"/>
+                            <constraint firstItem="nUL-je-x0r" firstAttribute="top" secondItem="PZX-ux-j7w" secondAttribute="top" constant="8" id="yVV-qi-XeD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PZX-ux-j7w"/>
                     </view>
