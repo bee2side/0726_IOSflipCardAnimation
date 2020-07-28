@@ -14,27 +14,39 @@ class CardviewViewController: UIViewController {
     var isOn = true
     let idCardFrontImage = UIImage(named: "idCard_front")
     let idCardBackImage = UIImage(named: "idCard_back")
+    let iconKakaoCerification = UIImage(named: "ico_kakaocertification")
     var transform = CATransform3DIdentity
     
-    func cardFlipAnimation() {
+    
+    func cardFlipAnimation(delayNum: Double) {
+        
+        // make image
+        let size = CGSize(width: idCardBackImage!.size.width, height: idCardBackImage!.size.height)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        idCardBackImage!.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        iconKakaoCerification!.draw(in: CGRect(x: 13, y: 13, width: 28, height: 28))
+        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        // card animation
         transform.m34 = 1.0 / 500.0
-        UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.25, delay: delayNum, options: .curveLinear, animations: {
             self.transform = CATransform3DRotate(self.transform, CGFloat(90 * Double.pi / 180), 0, 1, 0)
             self.idCard.layer.transform = self.transform
             
             if self.isOn {
                 self.idCard.image = self.idCardFrontImage
             } else {
-                self.idCard.image = self.idCardBackImage!.withHorizontallyFlippedOrientation()
+                self.idCard.image = newImage.withHorizontallyFlippedOrientation()
             }
  
         }, completion: { (_) in
             UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
-                self.transform = CATransform3DRotate(self.transform, CGFloat(90 * Double.pi / 180), 0, 1, 0)
+                self.transform = CATransform3DRotate(self.transform, CGFloat(100 * Double.pi / 180), 0, 1, 0)
                 self.idCard.layer.transform = self.transform
                 
                 if self.isOn {
-                    self.idCard.image = self.idCardBackImage!.withHorizontallyFlippedOrientation()
+                    self.idCard.image = newImage.withHorizontallyFlippedOrientation()
                     self.isOn = false
                 } else {
                     self.idCard.image = self.idCardFrontImage
@@ -43,13 +55,8 @@ class CardviewViewController: UIViewController {
  
             }, completion: { (_) in
                 UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
-                    self.transform = CATransform3DRotate(self.transform, CGFloat(10 * Double.pi / 180), 0, 1, 0)
+                    self.transform = CATransform3DRotate(self.transform, CGFloat(-10 * Double.pi / 180), 0, 1, 0)
                     self.idCard.layer.transform = self.transform
-                    }, completion: { (_) in
-                    UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
-                        self.transform = CATransform3DRotate(self.transform, CGFloat(-10 * Double.pi / 180), 0, 1, 0)
-                        self.idCard.layer.transform = self.transform
-                    })
                 })
             })
         })
@@ -57,14 +64,15 @@ class CardviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardFlipAnimation()
+        cardFlipAnimation(delayNum: 0.5)
         
+        // tab gesture
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto(_:)))
         idCard.addGestureRecognizer(tapGesture)
         idCard.isUserInteractionEnabled = true
     }
     
     @objc func touchToPickPhoto(_ gesture: UITapGestureRecognizer) {
-        cardFlipAnimation()
+        cardFlipAnimation(delayNum: 0)
     }
 }
