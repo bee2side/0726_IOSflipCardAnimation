@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40ABEF3824D397CB00753F1C /* UnitCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ABEF3724D397CB00753F1C /* UnitCardViewController.swift */; };
 		A3F4BDB024CD3FC30094415F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BDAF24CD3FC30094415F /* AppDelegate.swift */; };
 		A3F4BDB224CD3FC30094415F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BDB124CD3FC30094415F /* SceneDelegate.swift */; };
 		A3F4BDB424CD3FC30094415F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4BDB324CD3FC30094415F /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40ABEF3724D397CB00753F1C /* UnitCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCardViewController.swift; sourceTree = "<group>"; };
 		A3F4BDAC24CD3FC30094415F /* IOSflipCardAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSflipCardAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F4BDAF24CD3FC30094415F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F4BDB124CD3FC30094415F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A3F4BDB824CD3FC40094415F /* Assets.xcassets */,
 				A3F4BDBA24CD3FC40094415F /* LaunchScreen.storyboard */,
 				A3F4BDBD24CD3FC40094415F /* Info.plist */,
+				40ABEF3724D397CB00753F1C /* UnitCardViewController.swift */,
 			);
 			path = IOSflipCardAnimation;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ABEF3824D397CB00753F1C /* UnitCardViewController.swift in Sources */,
 				A3F4BDB424CD3FC30094415F /* ViewController.swift in Sources */,
 				A3F4BDB024CD3FC30094415F /* AppDelegate.swift in Sources */,
 				A3F4BDB224CD3FC30094415F /* SceneDelegate.swift in Sources */,

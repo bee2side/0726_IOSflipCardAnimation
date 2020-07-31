@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "wallet_list_ticket.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "#2_front.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

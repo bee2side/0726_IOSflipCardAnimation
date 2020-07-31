@@ -14,7 +14,7 @@ class CardviewViewController: UIViewController {
     var isOn = true
     let idCardFrontImage = UIImage(named: "idCard_front")
     let idCardBackImage = UIImage(named: "idCard_back")
-    let iconKakaoCerification = UIImage(named: "ico_kakaocertification")
+    let iconCerification = UIImage(named: "ico_certification_b")
     var transform = CATransform3DIdentity
     
     
@@ -24,7 +24,7 @@ class CardviewViewController: UIViewController {
         let size = CGSize(width: idCardBackImage!.size.width, height: idCardBackImage!.size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         idCardBackImage!.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
-        iconKakaoCerification!.draw(in: CGRect(x: 13, y: 13, width: 28, height: 28))
+        iconCerification!.draw(in: CGRect(x: 13, y: 13, width: 28, height: 28))
         let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
