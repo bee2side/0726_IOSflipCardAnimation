@@ -10,7 +10,6 @@
         <!--Navigation Controller-->
         <scene sceneID="nlN-Hx-rVR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JEx-La-qjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="hRK-uq-BxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aFg-W0-8hM">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -23,13 +22,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bpB-98-Fwn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEx-La-qjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-591" y="163"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSflipCardAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euG-79-li1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -110,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWQ-gc-j2s">
-                                <rect key="frame" x="16" y="329" width="343" height="1"/>
+                                <rect key="frame" x="0.0" y="329" width="375" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -136,6 +135,7 @@
                         <outlet property="kakaoCertificationBar" destination="bwW-XR-2fI" id="IIu-IY-JZa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.80000000000001" y="162.5615763546798"/>
         </scene>
