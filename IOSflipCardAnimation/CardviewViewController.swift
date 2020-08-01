@@ -70,9 +70,13 @@ class CardviewViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto(_:)))
         idCard.addGestureRecognizer(tapGesture)
         idCard.isUserInteractionEnabled = true
+        
     }
     
     @objc func touchToPickPhoto(_ gesture: UITapGestureRecognizer) {
         cardFlipAnimation(delayNum: 0)
     }
+    
+    @IBOutlet weak var labelSecurity: UILabel!
+    
 }
