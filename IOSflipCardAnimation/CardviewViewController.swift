@@ -70,6 +70,8 @@ class CardviewViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto(_:)))
         idCard.addGestureRecognizer(tapGesture)
         idCard.isUserInteractionEnabled = true
+
+        securityTimer()
         
     }
     
@@ -77,6 +79,36 @@ class CardviewViewController: UIViewController {
         cardFlipAnimation(delayNum: 0)
     }
     
-    @IBOutlet weak var labelSecurity: UILabel!
+    
+    // security line
+    @IBOutlet weak var securityLabel1: UILabel!
+    @IBOutlet weak var securityLabel2: UILabel!
+    @IBOutlet weak var securityLine: UIView!
+    
+    
+    //timer
+    var mTimer : Timer?
+    func securityTimer() {
+        mTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timeCollback), userInfo: nil, repeats: true)
+    }
+    
+    // add text, date
+    // text animation
+    var formatter = DateFormatter()
+    var securityLabelxPos: CGFloat = 0
+    @objc func timeCollback(){
+        formatter.dateFormat = "yyyy-mm-dd hh:mm"
+        let currentDateString = formatter.string(from: Date())
+        securityLabel1.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
+        securityLabel2.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
+        
+        if securityLabelxPos > -430 {
+            securityLabelxPos -= 1
+        } else {
+            securityLabelxPos = 0
+        }
+        securityLabel1.transform = CGAffineTransform(translationX: securityLabelxPos, y: 0)
+        securityLabel2.transform = CGAffineTransform(translationX: securityLabelxPos, y: 0)
+    }
     
 }

@@ -173,11 +173,18 @@
                                     <constraint firstAttribute="width" secondItem="nUL-je-x0r" secondAttribute="height" multiplier="343:220" id="Dse-BB-vuo"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-xQ-TSp">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-xQ-TSp">
                                 <rect key="frame" x="0.0" y="354" width="375" height="46"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사용가능      00.00.00:00      사용가능      00.00.00:00      사용가능    00.00.00:00      사용가능      00.00.00:00    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA2-32-pu8">
-                                        <rect key="frame" x="0.0" y="15" width="678" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0001 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA2-32-pu8">
+                                        <rect key="frame" x="0.0" y="15" width="430" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PO-sQ-ZXX">
+                                        <rect key="frame" x="430" y="15" width="430" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
@@ -294,7 +301,9 @@
                     <navigationItem key="navigationItem" id="59o-mb-NDB"/>
                     <connections>
                         <outlet property="idCard" destination="nUL-je-x0r" id="CHs-bu-QEO"/>
-                        <outlet property="labelSecurity" destination="xA2-32-pu8" id="FvM-93-qhG"/>
+                        <outlet property="securityLabel1" destination="xA2-32-pu8" id="bBp-kw-AXe"/>
+                        <outlet property="securityLabel2" destination="6PO-sQ-ZXX" id="7yv-5L-SuR"/>
+                        <outlet property="securityLine" destination="e7F-xQ-TSp" id="4mW-b5-mlt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujr-P4-gsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

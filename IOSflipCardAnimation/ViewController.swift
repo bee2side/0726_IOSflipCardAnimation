@@ -50,10 +50,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
         self.navigationController?.navigationBar.backItem?.title = ""
-//        self.navigationController?.navigationBar.frame = CGRect(x: -100, y: -100, width: 240, height: 240)
-        
-        
+
     }
+    
 }
 
 class UIRoundPrimaryButton: UIButton{
