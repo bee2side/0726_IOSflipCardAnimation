@@ -65,12 +65,11 @@ class CardviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cardFlipAnimation(delayNum: 0.5)
-        
         // tab gesture
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto(_:)))
         idCard.addGestureRecognizer(tapGesture)
         idCard.isUserInteractionEnabled = true
-
+        // security line
         securityTimer()
         
     }
@@ -83,7 +82,6 @@ class CardviewViewController: UIViewController {
     // security line
     @IBOutlet weak var securityLabel1: UILabel!
     @IBOutlet weak var securityLabel2: UILabel!
-    @IBOutlet weak var securityLine: UIView!
     
     
     //timer
@@ -97,9 +95,10 @@ class CardviewViewController: UIViewController {
     var formatter = DateFormatter()
     var securityLabelxPos: CGFloat = 0
     @objc func timeCollback(){
-        formatter.dateFormat = "yyyy-mm-dd hh:mm"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
         let currentDateString = formatter.string(from: Date())
         securityLabel1.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
+        //securityLabel1.textColor = UIColor.red
         securityLabel2.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
         
         if securityLabelxPos > -430 {
@@ -111,4 +110,7 @@ class CardviewViewController: UIViewController {
         securityLabel2.transform = CGAffineTransform(translationX: securityLabelxPos, y: 0)
     }
     
+
 }
+
+

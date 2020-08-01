@@ -303,12 +303,11 @@
                         <outlet property="idCard" destination="nUL-je-x0r" id="CHs-bu-QEO"/>
                         <outlet property="securityLabel1" destination="xA2-32-pu8" id="bBp-kw-AXe"/>
                         <outlet property="securityLabel2" destination="6PO-sQ-ZXX" id="7yv-5L-SuR"/>
-                        <outlet property="securityLine" destination="e7F-xQ-TSp" id="4mW-b5-mlt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujr-P4-gsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384.8" y="162.5615763546798"/>
+            <point key="canvasLocation" x="1025" y="163"/>
         </scene>
         <!--Unit Card View Controller-->
         <scene sceneID="d41-ni-L7b">
@@ -349,8 +348,24 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-zt-5TR">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-zt-5TR">
                                 <rect key="frame" x="0.0" y="354" width="375" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD2-08-0YP">
+                                        <rect key="frame" x="0.0" y="15" width="430" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnR-wc-RQ8">
+                                        <rect key="frame" x="430" y="15" width="430" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="meW-qo-RTW"/>
@@ -435,12 +450,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="p1J-JQ-d9B"/>
                     <connections>
+                        <outlet property="securityLabel3" destination="MD2-08-0YP" id="ZpQ-fu-k8p"/>
+                        <outlet property="securityLabel4" destination="SnR-wc-RQ8" id="rv0-BW-VPD"/>
                         <outlet property="unitCard" destination="8U9-O3-8pC" id="ME3-DQ-DVT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgU-0Z-RfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1385" y="881"/>
+            <point key="canvasLocation" x="1025" y="875"/>
         </scene>
     </scenes>
     <resources>

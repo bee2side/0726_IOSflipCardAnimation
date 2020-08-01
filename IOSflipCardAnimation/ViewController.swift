@@ -50,9 +50,15 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
         self.navigationController?.navigationBar.backItem?.title = ""
-
+        //self.navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(backAction))
+        
     }
-    
+    /*
+    @objc func backAction(sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+        print("test")
+    }
+    */
 }
 
 class UIRoundPrimaryButton: UIButton{
@@ -66,3 +72,5 @@ class UIRoundPrimaryButton: UIButton{
     }
     
 }
+
+

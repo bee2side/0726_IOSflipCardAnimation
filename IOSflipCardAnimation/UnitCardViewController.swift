@@ -27,18 +27,39 @@ class UnitCardViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         unitCard.image = newImage
-        // Do any additional setup after loading the view.
+        
+        securityTimer()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var securityLabel3: UILabel!
+    @IBOutlet weak var securityLabel4: UILabel!
+    
+    
+    //timer
+    var mTimer : Timer?
+    func securityTimer() {
+        mTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timeCollback), userInfo: nil, repeats: true)
     }
-    */
+    
+    // add text, date
+    // text animation
+    var formatter = DateFormatter()
+    var securityLabelxPos: CGFloat = 0
+    @objc func timeCollback(){
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        let currentDateString = formatter.string(from: Date())
+        securityLabel3.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
+        securityLabel4.text = String("사용가능      \(currentDateString)      사용가능      \(currentDateString)      ")
+        
+        if securityLabelxPos > -430 {
+            securityLabelxPos -= 1
+        } else {
+            securityLabelxPos = 0
+        }
+        securityLabel3.transform = CGAffineTransform(translationX: securityLabelxPos, y: 0)
+        securityLabel4.transform = CGAffineTransform(translationX: securityLabelxPos, y: 0)
+    }
+ 
 
 }
